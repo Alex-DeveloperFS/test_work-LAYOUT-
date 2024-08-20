@@ -1,0 +1,29 @@
+.group-people3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px;
+  grid-template-areas:
+    "Ronald-Richards Adobe phoneNumber3 mail3 Israel status3";
+  grid-area: group-people3;
+}
+
+.Ronald-Richards {
+  grid-area: Ronald-Richards;
+}
+
+.Adobe {
+  grid-area: Adobe;
+}
+.phoneNumber3 {
+  grid-area: phoneNumber3;
+}
+.mail3 {
+  grid-area: mail3;
+}
+.Israel {
+  grid-area: Israel;
+}
+.status3 {
+  grid-area: status3;
+}

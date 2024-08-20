@@ -1,0 +1,30 @@
+.group-people2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px;
+  grid-template-areas:
+    "Floyd-Miles Yahoo phoneNumber2 mail2 Kiribati status2";
+  grid-area: group-people2;
+}
+
+.Floyd-Miles {
+  grid-area: Floyd-Miles;
+
+}
+
+.Yahoo {
+  grid-area: Yahoo;
+}
+.phoneNumber2 {
+  grid-area: phoneNumber2;
+}
+.mail2 {
+  grid-area: mail2;
+}
+.Kiribati {
+  grid-area: Kiribati;
+}
+.status2 {
+  grid-area: status2;
+}

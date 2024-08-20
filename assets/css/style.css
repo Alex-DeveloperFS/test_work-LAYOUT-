@@ -1,0 +1,522 @@
+@charset "UTF-8";
+.filter {
+  display: grid;
+
+  gap: 5px;
+  grid-area: filter;
+  grid-template-areas: "Customer-Name company Phone-Number Email country status";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.Customer-Name {
+  border: 1px solid black;
+
+  grid-area: Customer-Name;
+}
+
+.company {
+  border: 1px solid black;
+
+  grid-area: company;
+}
+
+.Phone-Number {
+  border: 1px solid black;
+
+  grid-area: Phone-Number;
+}
+
+.Email {
+  border: 1px solid black;
+
+  grid-area: Email;
+}
+
+.country {
+  border: 1px solid black;
+
+  grid-area: country;
+}
+
+.status {
+  border: 1px solid black;
+
+  grid-area: status;
+}
+
+.group-people1 {
+  display: grid;
+
+  gap: 5px;
+  grid-area: group-people1;
+  grid-template-areas: "Jane-Cooper Microsoft phoneNumber1 mail1 United-States status1";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.Jane-Cooper {
+  grid-area: Jane-Cooper;
+}
+
+.Microsoft {
+  grid-area: Microsoft;
+}
+
+.phoneNumber1 {
+  grid-area: phoneNumber1;
+}
+
+.mail1 {
+  grid-area: mail1;
+}
+
+.United-States {
+  grid-area: United-States;
+}
+
+.status1 {
+  grid-area: status1;
+}
+
+.group-people2 {
+  display: grid;
+
+  gap: 5px;
+  grid-area: group-people2;
+  grid-template-areas: "Floyd-Miles Yahoo phoneNumber2 mail2 Kiribati status2";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.Floyd-Miles {
+  grid-area: Floyd-Miles;
+}
+
+.Yahoo {
+  grid-area: Yahoo;
+}
+
+.phoneNumber2 {
+  grid-area: phoneNumber2;
+}
+
+.mail2 {
+  grid-area: mail2;
+}
+
+.Kiribati {
+  grid-area: Kiribati;
+}
+
+.status2 {
+  grid-area: status2;
+}
+
+.group-people3 {
+  display: grid;
+
+  gap: 5px;
+  grid-area: group-people3;
+  grid-template-areas: "Ronald-Richards Adobe phoneNumber3 mail3 Israel status3";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.Ronald-Richards {
+  grid-area: Ronald-Richards;
+}
+
+.Adobe {
+  grid-area: Adobe;
+}
+
+.phoneNumber3 {
+  grid-area: phoneNumber3;
+}
+
+.mail3 {
+  grid-area: mail3;
+}
+
+.Israel {
+  grid-area: Israel;
+}
+
+.status3 {
+  grid-area: status3;
+}
+
+.group-people4 {
+  display: grid;
+
+  gap: 5px;
+  grid-area: group-people4;
+  grid-template-areas: "Marvin-McKinney Tesla phoneNumber4 mail4 Iran status4";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.Marvin-McKinney {
+  grid-area: Marvin-McKinney;
+}
+
+.Tesla {
+  grid-area: Tesla;
+}
+
+.phoneNumber4 {
+  grid-area: phoneNumber4;
+}
+
+.mail4 {
+  grid-area: mail4;
+}
+
+.Iran {
+  grid-area: Iran;
+}
+
+.status4 {
+  grid-area: status4;
+}
+
+.group-people5 {
+  display: grid;
+
+  gap: 5px;
+  grid-area: group-people5;
+  grid-template-areas: "Jerome-Bell Google phoneNumber5 mail5 Réunion status5";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.Jerome-Bell {
+  grid-area: Jerome-Bell;
+}
+
+.Google {
+  grid-area: Google;
+}
+
+.phoneNumber5 {
+  grid-area: phoneNumber5;
+}
+
+.mail5 {
+  grid-area: mail5;
+}
+
+.Réunion {
+  grid-area: Réunion;
+}
+
+.status5 {
+  grid-area: status5;
+}
+
+.group-people6 {
+  display: grid;
+
+  gap: 5px;
+  grid-area: group-people6;
+  grid-template-areas: "Kathryn-Murphy microsoft phoneNumber6 mail6 Curaçao status6";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.Kathryn-Murphy {
+  grid-area: Kathryn-Murphy;
+}
+
+.microsoft {
+  grid-area: microsoft;
+}
+
+.phoneNumber6 {
+  grid-area: phoneNumber4;
+}
+
+.mail6 {
+  grid-area: mail6;
+}
+
+.Curaçao {
+  grid-area: Curaçao;
+}
+
+.status6 {
+  grid-area: status6;
+}
+
+.group-people7 {
+  display: grid;
+
+  gap: 5px;
+  grid-area: group-people7;
+  grid-template-areas: "Kathryn-Murphy microsoft phoneNumber6 mail6 Curaçao status6";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.Jacob-Jones {
+  grid-area: Jacob-Jones;
+}
+
+.yahoo {
+  grid-area: yahoo;
+}
+
+.phoneNumber7 {
+  grid-area: phoneNumber7;
+}
+
+.mail7 {
+  grid-area: mail7;
+}
+
+.Brazil {
+  grid-area: Brazil;
+}
+
+.status7 {
+  grid-area: status7;
+}
+
+.group-people8 {
+  display: grid;
+
+  gap: 5px;
+  grid-area: group-people8;
+  grid-template-areas: "Kristin-Watson Facebook phoneNumber8 mail8 Åland-Islands status8";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.Kristin-Watson {
+  grid-area: Kristin-Watson;
+}
+
+.Facebook {
+  grid-area: Facebook;
+}
+
+.phoneNumber8 {
+  grid-area: phoneNumber8;
+}
+
+.mail8 {
+  grid-area: mail8;
+}
+
+.Åland-Islands {
+  grid-area: Åland-Islands;
+}
+
+.status7 {
+  grid-area: status8;
+}
+
+.container {
+  display: grid;
+
+  gap: 0;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column dense;
+  grid-auto-rows: 1fr;
+  grid-template-areas: "leftBlock rightBlock";
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 1fr;
+}
+
+.leftBlock {
+  display: grid;
+
+  gap: 0;
+  grid-area: leftBlock;
+  grid-auto-flow: row;
+  grid-template-areas: "menu" "evano_massage";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.3fr 0.7fr;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.evano_massage {
+  grid-area: evano_massage;
+}
+
+.rightBlock {
+  display: grid;
+
+  gap: 0;
+  grid-area: rightBlock;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "topBlock topBlock topBlock topBlock" "table table table table";
+  grid-template-columns: 0.3fr 2.1fr 0.4fr 1.2fr 1.7fr 0.3fr;
+  grid-template-rows: 0.6fr 2.3fr 0.1fr;
+}
+
+.table {
+  display: grid;
+
+  border: 1px solid black;
+
+  gap: 5px;
+  grid-area: table;
+  grid-auto-flow: row;
+  grid-template-areas: "header header header header header header" "filter filter filter filter filter filter" "group-people1 group-people1 group-people1 group-people1 group-people1 group-people1" "group-people2 group-people2 group-people2 group-people2 group-people2 group-people2" "group-people3 group-people3 group-people3 group-people3 group-people3 group-people3" "group-people4 group-people4 group-people4 group-people4 group-people4 group-people4" "group-people5 group-people5 group-people5 group-people5 group-people5 group-people5" "group-people6 group-people6 group-people6 group-people6 group-people6 group-people6" "group-people7 group-people7 group-people7 group-people7 group-people7 group-people7" "group-people8 group-people8 group-people8 group-people8 group-people8 group-people8" "showingData showingData showingData numberPage numberPage numberPage";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.header {
+  display: grid;
+
+  border: 1px solid black;
+
+  gap: 5px;
+  grid-area: header;
+  grid-auto-flow: row;
+  grid-template-areas: "allCustomers allCustomers allCustomers search search search";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.allCustomers {
+  grid-area: allCustomers;
+}
+
+.search {
+  grid-area: search;
+}
+
+.Kristin-Watson {
+  grid-area: Kristin-Watson;
+}
+
+.Facebook {
+  grid-area: Facebook;
+}
+
+.mail8 {
+  grid-area: mail8;
+}
+
+.Brazil {
+  grid-area: Brazil;
+}
+
+.Åland-Islands {
+  grid-area: Åland-Islands;
+}
+
+.status7 {
+  grid-area: status7;
+}
+
+.status8 {
+  grid-area: status8;
+}
+
+.showingData {
+  border: 1px solid black;
+
+  grid-area: showingData;
+}
+
+.numberPage {
+  border: 1px solid black;
+
+  grid-area: numberPage;
+}
+
+.topBlock {
+  display: grid;
+
+  gap: 0;
+  grid-area: topBlock;
+  grid-auto-flow: row;
+  grid-template-areas: "helloEvano helloEvano searchTop" "statictics statictics statictics" "statictics statictics statictics";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.statistics {
+  display: grid;
+
+  gap: 0;
+  grid-area: statictics;
+  grid-auto-flow: row;
+  grid-template-areas: "total members active";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.total {
+  display: grid;
+
+  gap: 0;
+  grid-area: total;
+  grid-auto-flow: row;
+  grid-template-areas: "image1 text1";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.image1 {
+  grid-area: image1;
+}
+
+.text1 {
+  grid-area: text1;
+}
+
+.members {
+  display: grid;
+
+  gap: 0;
+  grid-area: members;
+  grid-auto-flow: row;
+  grid-template-areas: "image2 text2";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.image2 {
+  grid-area: image2;
+}
+
+.text2 {
+  grid-area: text2;
+}
+
+.active {
+  display: grid;
+
+  gap: 0;
+  grid-area: active;
+  grid-auto-flow: row;
+  grid-template-areas: "image3 text3";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.image3 {
+  grid-area: image3;
+}
+
+.text3 {
+  grid-area: text3;
+}
+
+.helloEvano {
+  grid-area: helloEvano;
+}
+
+.searchTop {
+  grid-area: searchTop;
+}

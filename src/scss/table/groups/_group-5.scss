@@ -1,0 +1,29 @@
+.group-people5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px;
+  grid-template-areas:
+    "Jerome-Bell Google phoneNumber5 mail5 Réunion status5";
+  grid-area: group-people5;
+}
+
+.Jerome-Bell {
+  grid-area: Jerome-Bell;
+}
+
+.Google {
+  grid-area: Google;
+}
+.phoneNumber5 {
+  grid-area: phoneNumber5;
+}
+.mail5 {
+  grid-area: mail5;
+}
+.Réunion {
+  grid-area: Réunion;
+}
+.status5 {
+  grid-area: status5;
+}

@@ -1,0 +1,29 @@
+.group-people7 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px;
+  grid-template-areas:
+    "Kathryn-Murphy microsoft phoneNumber6 mail6 Curaçao status6";
+  grid-area: group-people7;
+}
+
+.Jacob-Jones {
+  grid-area: Jacob-Jones;
+}
+
+.yahoo {
+  grid-area: yahoo;
+}
+.phoneNumber7 {
+  grid-area: phoneNumber7;
+}
+.mail7 {
+  grid-area: mail7;
+}
+.Brazil {
+  grid-area: Brazil;
+}
+.status7 {
+  grid-area: status7;
+}
