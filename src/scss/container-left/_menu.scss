@@ -1,0 +1,67 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+
+
+  &-container {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+
+
+  &-item {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+    width: 250px;
+    padding-right: 20px;
+
+    &__content {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    &__object {
+      color: $color-white;
+    }
+
+    &__image {
+
+    }
+
+    &__link {
+
+      text-decoration: none;
+
+
+      &.active {
+
+        color: $color-white;
+      }
+
+    }
+
+    &.active {
+      background-color: #5932EA;
+      width: 250px;
+      padding-left: 11px;
+      padding-right: 8px;
+      margin-left: -11px;
+      border-radius: 7px;
+
+    }
+  }
+}
+
+

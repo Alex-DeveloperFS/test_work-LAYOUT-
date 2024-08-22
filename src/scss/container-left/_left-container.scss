@@ -1,0 +1,19 @@
+@use "../presets" as *;
+@use "../mixins" as *;;
+
+.left-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  1fr 6fr 1fr;
+  gap: 0;
+  grid-template-areas:
+    "logo"
+    "menu"
+    "massage-container";
+  grid-area: left-container;
+
+  background-color: $color-white;
+}
+
+
+

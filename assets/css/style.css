@@ -1,522 +1,777 @@
-@charset "UTF-8";
-.filter {
+.table__list-8,
+.table__list-7,
+.table__list-6,
+.table__list-5,
+.table__list-4,
+.table__list-3,
+.table__list-2,
+.table__list-1 {
+  margin-right: 40px;
+  margin-left: 38px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.table__filter {
+  display: grid;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  padding-right: 40px;
+  padding-left: 38px;
+
+  border-bottom: 1px solid #eeeeee;
+
+  grid-area: table__filter;
+  grid-template-areas: "names companies numbers emails countries statuses";
+  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
+  grid-template-rows: 1fr;
+}
+.table__filter--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  color: #b5b7c0;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.names {
+  grid-area: names;
+}
+
+.companies {
+  grid-area: companies;
+}
+
+.numbers {
+  grid-area: numbers;
+}
+
+.emails {
+  grid-area: emails;
+}
+
+.countries {
+  grid-area: countries;
+}
+
+.statuses {
+  padding-left: 12px;
+
+  grid-area: statuses;
+}
+
+.table__list-1 {
   display: grid;
 
-  gap: 5px;
-  grid-area: filter;
-  grid-template-areas: "Customer-Name company Phone-Number Email country status";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-area: table__list-1;
+  grid-template-areas: "name-1 company-1 number-1 email-1 country-1 status-1";
+  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
+  grid-template-rows: 90px repeat(9, 70px) 87px;
+}
+
+.name-1 {
+  grid-area: name-1;
+}
+
+.company-1 {
+  grid-area: company-1;
+}
+
+.number-1 {
+  grid-area: number-1;
+}
+
+.email-1 {
+  grid-area: email-1;
+}
+
+.country-1 {
+  grid-area: country-1;
+}
+
+.status-1 {
+  grid-area: status-1;
+}
+
+.table__list-2 {
+  display: grid;
+
+  grid-area: table__list-2;
+  grid-template-areas: "name-2 company-2 number-2 email-2 country-2 status-2";
+  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
   grid-template-rows: 1fr;
 }
 
-.Customer-Name {
-  border: 1px solid black;
-
-  grid-area: Customer-Name;
+.name-2 {
+  grid-area: name-2;
 }
 
-.company {
-  border: 1px solid black;
-
-  grid-area: company;
+.company-2 {
+  grid-area: company-2;
 }
 
-.Phone-Number {
-  border: 1px solid black;
-
-  grid-area: Phone-Number;
+.number-2 {
+  grid-area: number-2;
 }
 
-.Email {
-  border: 1px solid black;
-
-  grid-area: Email;
+.email-2 {
+  grid-area: email-2;
 }
 
-.country {
-  border: 1px solid black;
-
-  grid-area: country;
+.country-2 {
+  grid-area: country-2;
 }
 
-.status {
-  border: 1px solid black;
-
-  grid-area: status;
+.status-2 {
+  grid-area: status-2;
 }
 
-.group-people1 {
+.table__list-3 {
   display: grid;
 
-  gap: 5px;
-  grid-area: group-people1;
-  grid-template-areas: "Jane-Cooper Microsoft phoneNumber1 mail1 United-States status1";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-area: table__list-3;
+  grid-template-areas: "name-3 company-3 number-3 email-3 country-3 status-3";
+  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
   grid-template-rows: 1fr;
 }
 
-.Jane-Cooper {
-  grid-area: Jane-Cooper;
+.name-3 {
+  grid-area: name-3;
 }
 
-.Microsoft {
-  grid-area: Microsoft;
+.company-3 {
+  grid-area: company-3;
 }
 
-.phoneNumber1 {
-  grid-area: phoneNumber1;
+.number-3 {
+  grid-area: number-3;
 }
 
-.mail1 {
-  grid-area: mail1;
+.email-3 {
+  grid-area: email-3;
 }
 
-.United-States {
-  grid-area: United-States;
+.country-3 {
+  grid-area: country-3;
 }
 
-.status1 {
-  grid-area: status1;
+.status-3 {
+  grid-area: status-3;
 }
 
-.group-people2 {
+.table__list-4 {
   display: grid;
 
-  gap: 5px;
-  grid-area: group-people2;
-  grid-template-areas: "Floyd-Miles Yahoo phoneNumber2 mail2 Kiribati status2";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-area: table__list-4;
+  grid-template-areas: "name-4 company-4 number-4 email-4 country-4 status-4";
+  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
   grid-template-rows: 1fr;
 }
 
-.Floyd-Miles {
-  grid-area: Floyd-Miles;
+.name-4 {
+  grid-area: name-4;
 }
 
-.Yahoo {
-  grid-area: Yahoo;
+.company-4 {
+  grid-area: company-4;
 }
 
-.phoneNumber2 {
-  grid-area: phoneNumber2;
+.number-4 {
+  grid-area: number-4;
 }
 
-.mail2 {
-  grid-area: mail2;
+.email-4 {
+  grid-area: email-4;
 }
 
-.Kiribati {
-  grid-area: Kiribati;
+.country-4 {
+  grid-area: country-4;
 }
 
-.status2 {
-  grid-area: status2;
+.status-4 {
+  grid-area: status-4;
 }
 
-.group-people3 {
+.table__list-5 {
   display: grid;
 
-  gap: 5px;
-  grid-area: group-people3;
-  grid-template-areas: "Ronald-Richards Adobe phoneNumber3 mail3 Israel status3";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-area: table__list-5;
+  grid-template-areas: "name-5 company-5 number-5 email-5 country-5 status-5";
+  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
   grid-template-rows: 1fr;
 }
 
-.Ronald-Richards {
-  grid-area: Ronald-Richards;
+.name-5 {
+  grid-area: name-5;
 }
 
-.Adobe {
-  grid-area: Adobe;
+.company-5 {
+  grid-area: company-5;
 }
 
-.phoneNumber3 {
-  grid-area: phoneNumber3;
+.number-5 {
+  grid-area: number-5;
 }
 
-.mail3 {
-  grid-area: mail3;
+.email-5 {
+  grid-area: email-5;
 }
 
-.Israel {
-  grid-area: Israel;
+.country-5 {
+  grid-area: country-5;
 }
 
-.status3 {
-  grid-area: status3;
+.status-5 {
+  grid-area: status-5;
 }
 
-.group-people4 {
+.table__list-6 {
   display: grid;
 
-  gap: 5px;
-  grid-area: group-people4;
-  grid-template-areas: "Marvin-McKinney Tesla phoneNumber4 mail4 Iran status4";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-area: table__list-6;
+  grid-template-areas: "name-6 company-6 number-6 email-6 country-6 status-6";
+  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
   grid-template-rows: 1fr;
 }
 
-.Marvin-McKinney {
-  grid-area: Marvin-McKinney;
+.name-6 {
+  grid-area: name-6;
 }
 
-.Tesla {
-  grid-area: Tesla;
+.company-6 {
+  grid-area: company-6;
 }
 
-.phoneNumber4 {
-  grid-area: phoneNumber4;
+.number-6 {
+  grid-area: number-6;
 }
 
-.mail4 {
-  grid-area: mail4;
+.email-6 {
+  grid-area: email-6;
 }
 
-.Iran {
-  grid-area: Iran;
+.country-6 {
+  grid-area: country-6;
 }
 
-.status4 {
-  grid-area: status4;
+.status-6 {
+  grid-area: status-6;
 }
 
-.group-people5 {
+.table__list-7 {
   display: grid;
 
-  gap: 5px;
-  grid-area: group-people5;
-  grid-template-areas: "Jerome-Bell Google phoneNumber5 mail5 Réunion status5";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-area: table__list-7;
+  grid-template-areas: "name-7 company-7 number-7 email-7 country-7 status-7";
+  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
   grid-template-rows: 1fr;
 }
 
-.Jerome-Bell {
-  grid-area: Jerome-Bell;
+.name-7 {
+  grid-area: name-7;
 }
 
-.Google {
-  grid-area: Google;
+.company-7 {
+  grid-area: company-7;
 }
 
-.phoneNumber5 {
-  grid-area: phoneNumber5;
+.number-7 {
+  grid-area: number-7;
 }
 
-.mail5 {
-  grid-area: mail5;
+.email-7 {
+  grid-area: email-7;
 }
 
-.Réunion {
-  grid-area: Réunion;
+.country-7 {
+  grid-area: country-7;
 }
 
-.status5 {
-  grid-area: status5;
+.status-7 {
+  grid-area: status-7;
 }
 
-.group-people6 {
+.table__list-8 {
   display: grid;
 
-  gap: 5px;
-  grid-area: group-people6;
-  grid-template-areas: "Kathryn-Murphy microsoft phoneNumber6 mail6 Curaçao status6";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-area: table__list-8;
+  grid-template-areas: "name-8 company-8 number-8 email-8 country-8 status-8";
+  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
   grid-template-rows: 1fr;
 }
 
-.Kathryn-Murphy {
-  grid-area: Kathryn-Murphy;
+.name-8 {
+  grid-area: name-8;
 }
 
-.microsoft {
-  grid-area: microsoft;
+.company-8 {
+  grid-area: company-8;
 }
 
-.phoneNumber6 {
-  grid-area: phoneNumber4;
+.number-8 {
+  grid-area: number-8;
 }
 
-.mail6 {
-  grid-area: mail6;
+.email-8 {
+  grid-area: email-8;
 }
 
-.Curaçao {
-  grid-area: Curaçao;
+.country-8 {
+  grid-area: country-8;
 }
 
-.status6 {
-  grid-area: status6;
+.status-8 {
+  grid-area: status-8;
 }
 
-.group-people7 {
+.right-container {
   display: grid;
 
-  gap: 5px;
-  grid-area: group-people7;
-  grid-template-areas: "Kathryn-Murphy microsoft phoneNumber6 mail6 Curaçao status6";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-}
+  max-width: 968px;
+  margin: 0 auto;
 
-.Jacob-Jones {
-  grid-area: Jacob-Jones;
-}
-
-.yahoo {
-  grid-area: yahoo;
-}
-
-.phoneNumber7 {
-  grid-area: phoneNumber7;
-}
-
-.mail7 {
-  grid-area: mail7;
-}
-
-.Brazil {
-  grid-area: Brazil;
-}
-
-.status7 {
-  grid-area: status7;
-}
-
-.group-people8 {
-  display: grid;
-
-  gap: 5px;
-  grid-area: group-people8;
-  grid-template-areas: "Kristin-Watson Facebook phoneNumber8 mail8 Åland-Islands status8";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-
-.Kristin-Watson {
-  grid-area: Kristin-Watson;
-}
-
-.Facebook {
-  grid-area: Facebook;
-}
-
-.phoneNumber8 {
-  grid-area: phoneNumber8;
-}
-
-.mail8 {
-  grid-area: mail8;
-}
-
-.Åland-Islands {
-  grid-area: Åland-Islands;
-}
-
-.status7 {
-  grid-area: status8;
-}
-
-.container {
-  display: grid;
+  background-color: #f6f8ff;
 
   gap: 0;
-  grid-auto-columns: 1fr;
-  grid-auto-flow: column dense;
-  grid-auto-rows: 1fr;
-  grid-template-areas: "leftBlock rightBlock";
-  grid-template-columns: 0.6fr 1.4fr;
-  grid-template-rows: 1fr;
-}
-
-.leftBlock {
-  display: grid;
-
-  gap: 0;
-  grid-area: leftBlock;
-  grid-auto-flow: row;
-  grid-template-areas: "menu" "evano_massage";
+  grid-area: right-container;
+  grid-template-areas: "right-container__text right-container__text right-container__text right-container__text" "table table table table ";
   grid-template-columns: 1fr;
-  grid-template-rows: 1.3fr 0.7fr;
+  grid-template-rows: 77px 1fr;
 }
+.right-container__title {
+  margin-top: 41px;
 
-.menu {
-  grid-area: menu;
-}
+  font-size: 24px;
+  font-weight: 500;
 
-.evano_massage {
-  grid-area: evano_massage;
-}
-
-.rightBlock {
-  display: grid;
-
-  gap: 0;
-  grid-area: rightBlock;
-  grid-auto-columns: 1fr;
-  grid-auto-flow: row;
-  grid-template-areas: "topBlock topBlock topBlock topBlock" "table table table table";
-  grid-template-columns: 0.3fr 2.1fr 0.4fr 1.2fr 1.7fr 0.3fr;
-  grid-template-rows: 0.6fr 2.3fr 0.1fr;
+  grid-area: right-container__text;
 }
 
 .table {
   display: grid;
 
-  border: 1px solid black;
+  max-width: 968px;
+  max-height: 812px;
+  margin-top: 51px;
 
-  gap: 5px;
+  border-radius: 40px;
+  background-color: #ffffff;
+
   grid-area: table;
   grid-auto-flow: row;
-  grid-template-areas: "header header header header header header" "filter filter filter filter filter filter" "group-people1 group-people1 group-people1 group-people1 group-people1 group-people1" "group-people2 group-people2 group-people2 group-people2 group-people2 group-people2" "group-people3 group-people3 group-people3 group-people3 group-people3 group-people3" "group-people4 group-people4 group-people4 group-people4 group-people4 group-people4" "group-people5 group-people5 group-people5 group-people5 group-people5 group-people5" "group-people6 group-people6 group-people6 group-people6 group-people6 group-people6" "group-people7 group-people7 group-people7 group-people7 group-people7 group-people7" "group-people8 group-people8 group-people8 group-people8 group-people8 group-people8" "showingData showingData showingData numberPage numberPage numberPage";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "table__header table__header table__header table__header table__header table__header" "table__filter table__filter table__filter table__filter table__filter table__filter" "table__list-1 table__list-1 table__list-1 table__list-1 table__list-1 table__list-1" "table__list-2 table__list-2 table__list-2 table__list-2 table__list-2 table__list-2" "table__list-3 table__list-3 table__list-3 table__list-3 table__list-3 table__list-3" "table__list-4 table__list-4 table__list-4 table__list-4 table__list-4 table__list-4" "table__list-5 table__list-5 table__list-5 table__list-5 table__list-5 table__list-5" "table__list-6 table__list-6 table__list-6 table__list-6 table__list-6 table__list-6" "table__list-7 table__list-7 table__list-7 table__list-7 table__list-7 table__list-7" "table__list-8 table__list-8 table__list-8 table__list-8 table__list-8 table__list-8" "page-entries page-entries page-entries page-number page-number page-number";
+  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
+  grid-template-rows: 90px repeat(9, 70px) 87px;
 }
 
-.header {
+.table__header {
   display: grid;
 
-  border: 1px solid black;
+  grid-area: table__header;
+  grid-auto-flow: row;
+  grid-template-areas: "table__title table__title table__title table__header--search table__header--search table__header--search";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.table__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  padding-top: 30px;
+  padding-left: 38px;
+
+  grid-area: table__title;
+}
+.table__title--text-1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.table__title--text-2 {
+  padding-top: 7px;
+
+  color: #16c098;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+.table__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  color: #292d32;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+.table__search {
+  position: relative;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+
+  padding-right: 54px;
+
+  grid-area: table__header--search;
+}
+.table__search--input {
+  width: 216px;
+  height: 38px;
+  padding: 0 37px;
+
+  color: #b5b7c0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #f9fbff;
+
+  font-size: 12px;
+  font-weight: 400;
+}
+.table__search--image {
+  position: absolute;
+  top: 50%;
+  right: 245px;
+
+  width: 20px;
+  height: 20px;
+
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.status-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  width: 80px;
+  height: 29px;
+
+  color: #008767;
+  border: 2px solid #00b087;
+  border-radius: 5px;
+  background-color: rgba(22, 192, 152, 0.38);
+
+  font-size: 12px;
+}
+
+.status-inactive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  width: 80px;
+  height: 29px;
+
+  color: #df0404;
+  border: 2px solid #df0404;
+  border-radius: 5px;
+  background-color: #ffc5c5;
+
+  font-size: 12px;
+}
+
+.page-entries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  margin-left: 38px;
+
+  grid-area: page-entries;
+}
+.page-entries__text {
+  color: #b5b7c0;
+}
+
+.page-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+
+  margin-right: 40px;
+
+  grid-area: page-number;
+}
+.page-number__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  gap: 10px;
+}
+.page-number__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  width: 26px;
+  height: 26px;
+
+  color: #404b52;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+
+  font-size: 12px;
+}
+.page-number__item-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  width: 26px;
+  height: 26px;
+
+  color: #ffffff;
+  border: 1px solid #5932ea;
+  border-radius: 5px;
+  background-color: #5932ea;
+
+  font-size: 12px;
+}
+
+.left-container {
+  display: grid;
+
+  background-color: #ffffff;
+
+  gap: 0;
+  grid-area: left-container;
+  grid-template-areas: "logo" "menu" "massage-container";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  grid-area: menu;
+}
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  max-width: 250px;
+
+  gap: 20px;
+}
+.menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  width: 250px;
+  height: 46px;
+  padding-right: 20px;
+
+  gap: 10px;
+}
+.menu-item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
 
   gap: 5px;
-  grid-area: header;
-  grid-auto-flow: row;
-  grid-template-areas: "allCustomers allCustomers allCustomers search search search";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.menu-item__object {
+  color: #ffffff;
+}
+.menu-item__link {
+  text-decoration: none;
+}
+.menu-item__link.active {
+  color: #ffffff;
+}
+.menu-item.active {
+  width: 250px;
+  margin-left: -11px;
+  padding-right: 8px;
+  padding-left: 11px;
+
+  border-radius: 7px;
+  background-color: #5932ea;
+}
+
+.message {
+  margin-left: 28px;
+
+  grid-area: massage-container;
+}
+.message-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  gap: 10px;
+}
+.message-item__image {
+  width: 42px;
+  height: 42px;
+}
+.message-item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  gap: 10px;
+}
+.message-item__text {
+  color: #000000;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+.message-item__text--bottom {
+  color: #757575;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.logo {
+  grid-area: logo;
+}
+.logo__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  margin-top: 36px;
+  margin-left: 28px;
+}
+.logo__text {
+  margin-left: 8px;
+
+  font-family: "Poppins", sans-serif;
+}
+.logo__span {
+  margin-top: 10px;
+  margin-left: 4px;
+
+  color: #838383;
+
+  font-size: 12px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.container {
+  display: grid;
+
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+
+  gap: 0;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-areas: "left-container right-container";
+  grid-template-columns: 23% 77%;
   grid-template-rows: 1fr;
 }
 
-.allCustomers {
-  grid-area: allCustomers;
-}
-
-.search {
-  grid-area: search;
-}
-
-.Kristin-Watson {
-  grid-area: Kristin-Watson;
-}
-
-.Facebook {
-  grid-area: Facebook;
-}
-
-.mail8 {
-  grid-area: mail8;
-}
-
-.Brazil {
-  grid-area: Brazil;
-}
-
-.Åland-Islands {
-  grid-area: Åland-Islands;
-}
-
-.status7 {
-  grid-area: status7;
-}
-
-.status8 {
-  grid-area: status8;
-}
-
-.showingData {
-  border: 1px solid black;
-
-  grid-area: showingData;
-}
-
-.numberPage {
-  border: 1px solid black;
-
-  grid-area: numberPage;
-}
-
-.topBlock {
-  display: grid;
-
-  gap: 0;
-  grid-area: topBlock;
-  grid-auto-flow: row;
-  grid-template-areas: "helloEvano helloEvano searchTop" "statictics statictics statictics" "statictics statictics statictics";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.statistics {
-  display: grid;
-
-  gap: 0;
-  grid-area: statictics;
-  grid-auto-flow: row;
-  grid-template-areas: "total members active";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-
-.total {
-  display: grid;
-
-  gap: 0;
-  grid-area: total;
-  grid-auto-flow: row;
-  grid-template-areas: "image1 text1";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-
-.image1 {
-  grid-area: image1;
-}
-
-.text1 {
-  grid-area: text1;
-}
-
-.members {
-  display: grid;
-
-  gap: 0;
-  grid-area: members;
-  grid-auto-flow: row;
-  grid-template-areas: "image2 text2";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-
-.image2 {
-  grid-area: image2;
-}
-
-.text2 {
-  grid-area: text2;
-}
-
-.active {
-  display: grid;
-
-  gap: 0;
-  grid-area: active;
-  grid-auto-flow: row;
-  grid-template-areas: "image3 text3";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-
-.image3 {
-  grid-area: image3;
-}
-
-.text3 {
-  grid-area: text3;
-}
-
-.helloEvano {
-  grid-area: helloEvano;
-}
-
-.searchTop {
-  grid-area: searchTop;
+body {
+  background-color: #f6f8ff;
 }

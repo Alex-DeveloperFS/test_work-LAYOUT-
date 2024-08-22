@@ -1,0 +1,39 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.message {
+  grid-area: massage-container;
+  margin-left: 28px;
+
+
+  &-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__image {
+      width: 42px;
+      height: 42px;
+    }
+
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+
+    &__text {
+      font-size: 14px;
+      font-weight: 500;
+      color: $color-black;
+
+      &--bottom {
+        font-size: 12px;
+        font-weight: 500;
+        color: #757575;
+      }
+    }
+  }
+}

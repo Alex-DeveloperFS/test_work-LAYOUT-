@@ -1,0 +1,53 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.table__filter {
+  display: grid;
+  grid-template-columns: $grid-columns;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "names companies numbers emails countries statuses";
+  grid-area: table__filter;
+  align-items: center;
+  border-bottom: 1px solid #EEEEEE;
+  padding-left: 38px;
+  padding-right: 40px;
+
+  &--item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $color-text-filter;
+    font-weight: 500;
+  }
+}
+
+.names {
+  grid-area: names;
+
+}
+
+.companies {
+  grid-area: companies;
+
+}
+
+.numbers {
+  grid-area: numbers;
+
+}
+
+.emails {
+  grid-area: emails;
+
+}
+
+.countries {
+  grid-area: countries;
+
+}
+
+.statuses {
+  grid-area: statuses;
+  padding-left: 12px;
+}

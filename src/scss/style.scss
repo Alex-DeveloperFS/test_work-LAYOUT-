@@ -1,1 +1,36 @@
-@use "table";
+@use "presets" as *;
+@use "mixins" as *;
+@use "container-right";
+@use "container-left";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: 1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns:  23% 77%;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0;
+  grid-template-areas:
+    "left-container right-container";
+  max-width:  $container-primary;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+body {
+  background-color: $color-bg-container;
+}

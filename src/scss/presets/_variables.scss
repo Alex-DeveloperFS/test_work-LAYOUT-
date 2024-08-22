@@ -1,0 +1,24 @@
+$font-family: "Poppins", sans-serif;
+$font-size: 14px;
+
+//$grid: 178px 150px 150px 220px 170px 100px;
+
+$grid-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
+$grid-rows: 90px repeat(9, 70px) 87px;
+
+$container-primary: 1440px;
+$container-sm: 306px;
+$gap: 20px;
+$gap-sm: 10px;
+$gap-lg: 40px;
+
+$ul: 1380px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+$xs: 480px;
+$xx: 420px;
+$ux: 360px;
+$rr: 375px;
+

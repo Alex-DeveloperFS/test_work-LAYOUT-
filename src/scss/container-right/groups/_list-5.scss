@@ -1,0 +1,32 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.table__list-5 {
+  display: grid;
+  grid-template-columns: $grid-columns ;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "name-5 company-5 number-5 email-5 country-5 status-5";
+  grid-area: table__list-5;
+  @extend %table-items
+}
+
+.name-5 {
+  grid-area: name-5;
+
+}
+.company-5 {
+  grid-area: company-5;
+}
+.number-5 {
+  grid-area: number-5;
+}
+.email-5 {
+  grid-area: email-5;
+}
+.country-5 {
+  grid-area: country-5;
+}
+.status-5 {
+  grid-area: status-5;
+}

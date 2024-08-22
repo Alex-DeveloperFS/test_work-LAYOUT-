@@ -1,0 +1,30 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.logo {
+  grid-area: logo;
+
+  &__items {
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+    margin-left: 28px;
+  }
+
+  &__image {
+
+  }
+
+  &__text {
+    font-family: $font-family;
+    margin-left: 8px;
+  }
+
+  &__span {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 4px;
+    color: #838383;
+  }
+}
+
