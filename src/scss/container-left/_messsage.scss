@@ -3,13 +3,14 @@
 
 .message {
   grid-area: massage-container;
-  margin-left: 28px;
+  margin-left: 29px;
+  margin-top: -4px;
 
 
   &-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 
     &__image {
       width: 42px;
@@ -20,7 +21,8 @@
     &__content {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 7px;
+      margin-top: 1px;
     }
 
 

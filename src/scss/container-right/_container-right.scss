@@ -6,29 +6,28 @@
 .right-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 77px 1fr;
+  grid-template-rows: 10% 90%;
   gap: 0;
   grid-template-areas:
-    "right-container__text right-container__text right-container__text right-container__text"
-    "table table table table ";
+    "right-container__text"
+    "table";
   grid-area: right-container;
   background-color: $color-bg-container;
-  max-width: 968px;
-  margin: 0 auto;
+  width: 100%;
 
   &__title {
     grid-area: right-container__text;
-    margin-top: 41px;
     font-size: 24px;
     font-weight: 500;
-
+    margin-top: 47px;
+    margin-left: 71px;
   }
 }
 
 .table {
   display: grid;
   grid-template-columns: $grid-columns;
-  grid-template-rows: 90px repeat(9, 70px) 87px;
+  grid-template-rows: 96px repeat(9, 69px) 68px;
   grid-auto-flow: row;
   grid-template-areas:
     "table__header table__header table__header table__header table__header table__header"
@@ -43,11 +42,13 @@
     "table__list-8 table__list-8 table__list-8 table__list-8 table__list-8 table__list-8"
     "page-entries page-entries page-entries page-number page-number page-number";
   grid-area: table;
-  border-radius: 40px;
+  border-radius: 30px;
   max-height: 812px;
   max-width: 968px;
   background-color: $color-white;
-  margin-top: 51px;
+  margin-top: 33px;
+  margin-left: 71px;
+
 }
 
 .table {
@@ -67,18 +68,20 @@
     display: flex;
     flex-direction: column;
     padding-left: 38px;
-    padding-top: 30px;
+    padding-top: 36px;
 
     &--text-1 {
       font-size: 22px;
       font-weight: 600;
+      letter-spacing: -0.2px;
     }
 
     &--text-2 {
       font-size: 14px;
       font-weight: 400;
-      padding-top: 7px;
+      padding-top: 15px;
       color: #16C098;
+      letter-spacing: -0.2px;
     }
   }
 
@@ -88,6 +91,7 @@
     font-size: 14px;
     color: $color-text-item;
     font-weight: 500;
+    letter-spacing: -0.15px;
 
   }
 
@@ -98,13 +102,15 @@
     align-items: center;
     padding-right: 54px;
     position: relative;
+    margin-top: 36px;
 
     &--input {
       border: none;
       outline: none;
       width: 216px;
       height: 38px;
-      padding: 0 37px;
+      padding-left: 41px;
+      padding-bottom: 6px;
       font-size: 12px;
       font-weight: 400;
       color: #B5B7C0;
@@ -114,11 +120,11 @@
 
     &--image {
       position: absolute;
-      right: 245px;
-      top: 50%;
       transform: translateY(-50%);
-      width: 20px;
-      height: 20px;
+      top: 45%;
+      right: 236px;
+      height: 25px;
+      width: 25px;
     }
   }
 }
@@ -128,12 +134,15 @@
   align-items: center;
   justify-content: center;
   border: 2px solid #00B087;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: rgba(22, 192, 152, 0.38);
   color: #008767;
   font-size: 12px;
+  font-weight: 500;
   width: 80px;
   height: 29px;
+  letter-spacing: 1px;
+
 
 }
 
@@ -142,12 +151,14 @@
   align-items: center;
   justify-content: center;
   border: 2px solid #DF0404;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: #FFC5C5;
   color: #DF0404;
   font-size: 12px;
+  font-weight: 500;
   width: 80px;
   height: 29px;
+  letter-spacing: 1px;
 }
 
 .page-entries {
@@ -155,9 +166,11 @@
   display: flex;
   align-items: center;
   margin-left: 38px;
+  margin-top: 18px;
 
   &__text {
     color: $color-text-filter;
+
   }
 }
 
@@ -170,7 +183,9 @@
 
   &__list {
     display: flex;
-    gap: 10px;
+    gap: 9px;
+    margin-top: 19px;
+
 
   }
 
@@ -184,7 +199,7 @@
     color: #404B52;
     font-size: 12px;
     width: 26px;
-    height: 26px;
+    height: 24px;
 
     &-active {
       display: flex;

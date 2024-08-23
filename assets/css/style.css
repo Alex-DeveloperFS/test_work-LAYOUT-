@@ -18,6 +18,7 @@
   align-items: center;
   -ms-flex-align: center;
 
+  margin-top: 22px;
   padding-right: 40px;
   padding-left: 38px;
 
@@ -25,7 +26,7 @@
 
   grid-area: table__filter;
   grid-template-areas: "names companies numbers emails countries statuses";
-  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
+  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
   grid-template-rows: 1fr;
 }
 .table__filter--item {
@@ -71,9 +72,11 @@
 .table__list-1 {
   display: grid;
 
+  margin-top: -10px;
+
   grid-area: table__list-1;
   grid-template-areas: "name-1 company-1 number-1 email-1 country-1 status-1";
-  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
+  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
   grid-template-rows: 90px repeat(9, 70px) 87px;
 }
 
@@ -104,9 +107,11 @@
 .table__list-2 {
   display: grid;
 
+  margin-top: 2px;
+
   grid-area: table__list-2;
   grid-template-areas: "name-2 company-2 number-2 email-2 country-2 status-2";
-  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
+  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
   grid-template-rows: 1fr;
 }
 
@@ -137,9 +142,11 @@
 .table__list-3 {
   display: grid;
 
+  margin-top: 2px;
+
   grid-area: table__list-3;
   grid-template-areas: "name-3 company-3 number-3 email-3 country-3 status-3";
-  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
+  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
   grid-template-rows: 1fr;
 }
 
@@ -170,9 +177,11 @@
 .table__list-4 {
   display: grid;
 
+  margin-top: 2px;
+
   grid-area: table__list-4;
   grid-template-areas: "name-4 company-4 number-4 email-4 country-4 status-4";
-  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
+  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
   grid-template-rows: 1fr;
 }
 
@@ -203,9 +212,11 @@
 .table__list-5 {
   display: grid;
 
+  margin-top: 2px;
+
   grid-area: table__list-5;
   grid-template-areas: "name-5 company-5 number-5 email-5 country-5 status-5";
-  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
+  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
   grid-template-rows: 1fr;
 }
 
@@ -236,9 +247,11 @@
 .table__list-6 {
   display: grid;
 
+  margin-top: 2px;
+
   grid-area: table__list-6;
   grid-template-areas: "name-6 company-6 number-6 email-6 country-6 status-6";
-  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
+  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
   grid-template-rows: 1fr;
 }
 
@@ -269,9 +282,11 @@
 .table__list-7 {
   display: grid;
 
+  margin-top: 2px;
+
   grid-area: table__list-7;
   grid-template-areas: "name-7 company-7 number-7 email-7 country-7 status-7";
-  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
+  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
   grid-template-rows: 1fr;
 }
 
@@ -302,9 +317,11 @@
 .table__list-8 {
   display: grid;
 
+  margin-top: 2px;
+
   grid-area: table__list-8;
   grid-template-areas: "name-8 company-8 number-8 email-8 country-8 status-8";
-  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
+  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
   grid-template-rows: 1fr;
 }
 
@@ -335,19 +352,19 @@
 .right-container {
   display: grid;
 
-  max-width: 968px;
-  margin: 0 auto;
+  width: 100%;
 
   background-color: #f6f8ff;
 
   gap: 0;
   grid-area: right-container;
-  grid-template-areas: "right-container__text right-container__text right-container__text right-container__text" "table table table table ";
+  grid-template-areas: "right-container__text" "table";
   grid-template-columns: 1fr;
-  grid-template-rows: 77px 1fr;
+  grid-template-rows: 10% 90%;
 }
 .right-container__title {
-  margin-top: 41px;
+  margin-top: 47px;
+  margin-left: 71px;
 
   font-size: 24px;
   font-weight: 500;
@@ -360,16 +377,17 @@
 
   max-width: 968px;
   max-height: 812px;
-  margin-top: 51px;
+  margin-top: 33px;
+  margin-left: 71px;
 
-  border-radius: 40px;
+  border-radius: 30px;
   background-color: #ffffff;
 
   grid-area: table;
   grid-auto-flow: row;
   grid-template-areas: "table__header table__header table__header table__header table__header table__header" "table__filter table__filter table__filter table__filter table__filter table__filter" "table__list-1 table__list-1 table__list-1 table__list-1 table__list-1 table__list-1" "table__list-2 table__list-2 table__list-2 table__list-2 table__list-2 table__list-2" "table__list-3 table__list-3 table__list-3 table__list-3 table__list-3 table__list-3" "table__list-4 table__list-4 table__list-4 table__list-4 table__list-4 table__list-4" "table__list-5 table__list-5 table__list-5 table__list-5 table__list-5 table__list-5" "table__list-6 table__list-6 table__list-6 table__list-6 table__list-6 table__list-6" "table__list-7 table__list-7 table__list-7 table__list-7 table__list-7 table__list-7" "table__list-8 table__list-8 table__list-8 table__list-8 table__list-8 table__list-8" "page-entries page-entries page-entries page-number page-number page-number";
-  grid-template-columns: minmax(170px, auto) minmax(130px, auto) minmax(158px, auto) minmax(200px, auto) minmax(140px, auto) minmax(130px, auto);
-  grid-template-rows: 90px repeat(9, 70px) 87px;
+  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
+  grid-template-rows: 96px repeat(9, 69px) 68px;
 }
 
 .table__header {
@@ -390,17 +408,21 @@
   -ms-flex-direction: column;
       flex-direction: column;
 
-  padding-top: 30px;
+  padding-top: 36px;
   padding-left: 38px;
 
   grid-area: table__title;
 }
 .table__title--text-1 {
+  letter-spacing: -0.2px;
+
   font-size: 22px;
   font-weight: 600;
 }
 .table__title--text-2 {
-  padding-top: 7px;
+  padding-top: 15px;
+
+  letter-spacing: -0.2px;
 
   color: #16c098;
 
@@ -414,6 +436,8 @@
   -webkit-box-align: center;
   align-items: center;
   -ms-flex-align: center;
+
+  letter-spacing: -0.15px;
 
   color: #292d32;
 
@@ -433,6 +457,7 @@
   -ms-flex-pack: end;
   justify-content: flex-end;
 
+  margin-top: 36px;
   padding-right: 54px;
 
   grid-area: table__header--search;
@@ -440,7 +465,8 @@
 .table__search--input {
   width: 216px;
   height: 38px;
-  padding: 0 37px;
+  padding-bottom: 6px;
+  padding-left: 41px;
 
   color: #b5b7c0;
   border: none;
@@ -453,11 +479,11 @@
 }
 .table__search--image {
   position: absolute;
-  top: 50%;
-  right: 245px;
+  top: 45%;
+  right: 236px;
 
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -478,12 +504,15 @@
   width: 80px;
   height: 29px;
 
+  letter-spacing: 1px;
+
   color: #008767;
   border: 2px solid #00b087;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: rgba(22, 192, 152, 0.38);
 
   font-size: 12px;
+  font-weight: 500;
 }
 
 .status-inactive {
@@ -500,12 +529,15 @@
   width: 80px;
   height: 29px;
 
+  letter-spacing: 1px;
+
   color: #df0404;
   border: 2px solid #df0404;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: #ffc5c5;
 
   font-size: 12px;
+  font-weight: 500;
 }
 
 .page-entries {
@@ -516,6 +548,7 @@
   align-items: center;
   -ms-flex-align: center;
 
+  margin-top: 18px;
   margin-left: 38px;
 
   grid-area: page-entries;
@@ -544,7 +577,9 @@
   display: -ms-flexbox;
   display: flex;
 
-  gap: 10px;
+  margin-top: 19px;
+
+  gap: 9px;
 }
 .page-number__item {
   display: -webkit-box;
@@ -558,7 +593,7 @@
   justify-content: center;
 
   width: 26px;
-  height: 26px;
+  height: 24px;
 
   color: #404b52;
   border: 1px solid #eeeeee;
@@ -621,8 +656,9 @@
       flex-direction: column;
 
   max-width: 250px;
+  margin-top: 9px;
 
-  gap: 20px;
+  gap: 18px;
 }
 .menu-item {
   display: -webkit-box;
@@ -637,7 +673,10 @@
 
   width: 250px;
   height: 46px;
-  padding-right: 20px;
+  padding-right: 13px;
+  padding-left: 11px;
+
+  border-radius: 7px;
 
   gap: 10px;
 }
@@ -649,9 +688,17 @@
   align-items: center;
   -ms-flex-align: center;
 
-  gap: 5px;
+  gap: 14px;
 }
-.menu-item__object {
+.menu-item__arrow {
+  margin-right: -2px;
+
+  color: #9197b3;
+
+  font-size: 17px;
+  font-weight: 500;
+}
+.menu-item__arrow.active {
   color: #ffffff;
 }
 .menu-item__link {
@@ -662,16 +709,16 @@
 }
 .menu-item.active {
   width: 250px;
-  margin-left: -11px;
-  padding-right: 8px;
+  padding-right: 13px;
   padding-left: 11px;
 
-  border-radius: 7px;
+  border-radius: 8px;
   background-color: #5932ea;
 }
 
 .message {
-  margin-left: 28px;
+  margin-top: -4px;
+  margin-left: 29px;
 
   grid-area: massage-container;
 }
@@ -683,7 +730,7 @@
   align-items: center;
   -ms-flex-align: center;
 
-  gap: 10px;
+  gap: 12px;
 }
 .message-item__image {
   width: 42px;
@@ -698,7 +745,9 @@
   -ms-flex-direction: column;
       flex-direction: column;
 
-  gap: 10px;
+  margin-top: 1px;
+
+  gap: 7px;
 }
 .message-item__text {
   color: #000000;
@@ -724,13 +773,17 @@
   align-items: center;
   -ms-flex-align: center;
 
-  margin-top: 36px;
+  margin-top: 25px;
   margin-left: 28px;
 }
 .logo__text {
-  margin-left: 8px;
+  margin-top: 18px;
+  margin-left: 8.4px;
+
+  letter-spacing: 0.08px;
 
   font-family: "Poppins", sans-serif;
+  font-size: 26px;
 }
 .logo__span {
   margin-top: 10px;
@@ -738,7 +791,7 @@
 
   color: #838383;
 
-  font-size: 12px;
+  font-size: 10px;
 }
 
 * {
@@ -768,7 +821,7 @@ html {
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   grid-template-areas: "left-container right-container";
-  grid-template-columns: 23% 77%;
+  grid-template-columns: 21.3% 78.7%;
   grid-template-rows: 1fr;
 }
 

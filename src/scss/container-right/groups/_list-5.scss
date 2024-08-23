@@ -8,7 +8,8 @@
   grid-template-areas:
     "name-5 company-5 number-5 email-5 country-5 status-5";
   grid-area: table__list-5;
-  @extend %table-items
+  @extend %table-items;
+  margin-top: 2px;
 }
 
 .name-5 {
