@@ -6,7 +6,7 @@
 .right-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: minmax(96px, 8%) 90%;
   gap: 0;
   grid-template-areas:
     "right-container__text"
@@ -14,6 +14,17 @@
   grid-area: right-container;
   background-color: $color-bg-container;
   width: 100%;
+  height: 100vh;
+  padding-right: 50px;
+
+  @include xl {
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include lg {
+    padding-bottom: 80px;
+  }
 
   &__title {
     grid-area: right-container__text;
@@ -21,14 +32,22 @@
     font-weight: 500;
     margin-top: 47px;
     margin-left: 71px;
+
+    @include xl-lg {
+      font-size: 20px;
+    }
+
+    @include lg {
+      font-size: 16px;
+    }
   }
 }
 
 .table {
   display: grid;
-  grid-template-columns: $grid-columns;
-  grid-template-rows: 96px repeat(9, 69px) 68px;
-  grid-auto-flow: row;
+  grid-template-columns: $grid-columns-ul;
+
+  grid-template-rows: $grid-rows-ul;
   grid-template-areas:
     "table__header table__header table__header table__header table__header table__header"
     "table__filter table__filter table__filter table__filter table__filter table__filter"
@@ -49,6 +68,14 @@
   margin-top: 33px;
   margin-left: 71px;
 
+  @include xl {
+    margin-left: 40px
+  }
+
+  @include lg {
+    margin-top: 0;
+    //max-height: 420px;
+  }
 }
 
 .table {
@@ -68,13 +95,30 @@
     display: flex;
     flex-direction: column;
     padding-left: 38px;
-    padding-top: 36px;
+    margin-top: 36px;
+
+    @include xl-lg {
+      margin-top: 20px;
+    }
+
+    @include lg {
+      margin-top: 20px;
+    }
 
     &--text-1 {
       font-size: 22px;
       font-weight: 600;
       letter-spacing: -0.2px;
+
+      @include xl-lg {
+        font-size: 18px;
+      }
+
+      @include lg {
+        font-size: 14px;
+      }
     }
+
 
     &--text-2 {
       font-size: 14px;
@@ -82,6 +126,14 @@
       padding-top: 15px;
       color: #16C098;
       letter-spacing: -0.2px;
+
+      @include xl-lg {
+        font-size: 12px;
+      }
+
+      @include lg {
+        font-size: 11px;
+      }
     }
   }
 
@@ -93,6 +145,16 @@
     font-weight: 500;
     letter-spacing: -0.15px;
 
+    @include xl-lg {
+      font-size: 12px;
+    }
+    @include lg {
+      font-size: 9px;
+    }
+
+    @include md {
+      font-size: 8px;
+    }
   }
 
   &__search {
@@ -103,6 +165,21 @@
     padding-right: 54px;
     position: relative;
     margin-top: 36px;
+
+    @include xl {
+
+
+    }
+
+    @include xl-lg {
+      margin-top: 20px;
+      padding-right: 40px;
+    }
+
+    @include lg {
+      margin-top: 20px;
+      padding-right: 40px;
+    }
 
     &--input {
       border: none;
@@ -116,18 +193,30 @@
       color: #B5B7C0;
       background-color: #F9FBFF;
       border-radius: 5px;
-    }
 
-    &--image {
-      position: absolute;
-      transform: translateY(-50%);
-      top: 45%;
-      right: 236px;
-      height: 25px;
-      width: 25px;
+      @include xl {
+        width: 180px;
+        height: 30px;
+        padding-bottom: 3px;
+      }
+    }
+      &--image {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 45%;
+        right: 236px;
+        height: 25px;
+        width: 25px;
+
+        @include xl {
+          top: 50%;
+          right: 190px;
+
+        }
+      }
     }
   }
-}
+
 
 .status-active {
   display: flex;
@@ -143,7 +232,22 @@
   height: 29px;
   letter-spacing: 1px;
 
+  @include xl-lg {
+    font-size: 12px;
+  }
 
+  @include lg {
+    font-size: 10px;
+    font-weight: 300;
+    border: 1px solid #00B087;
+    width: 50px;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  @include md {
+    font-size: 8px;
+  }
 }
 
 .status-inactive {
@@ -159,6 +263,22 @@
   width: 80px;
   height: 29px;
   letter-spacing: 1px;
+
+  @include xl-lg {
+    font-size: 12px;
+  }
+
+  @include lg {
+    font-size: 10px;
+    font-weight: 300;
+    border: 1px solid #DF0404;
+    width: 50px;
+    height: 20px;
+  }
+  @include md {
+    font-size: 8px;
+  }
+
 }
 
 .page-entries {
@@ -166,10 +286,18 @@
   display: flex;
   align-items: center;
   margin-left: 38px;
-  margin-top: 18px;
+  margin-top: -10px;
 
   &__text {
     color: $color-text-filter;
+
+    @include xl-lg {
+      font-size: 12px;
+    }
+
+    @include lg {
+      font-size: 10px;
+    }
 
   }
 }
@@ -184,7 +312,7 @@
   &__list {
     display: flex;
     gap: 9px;
-    margin-top: 19px;
+    margin-top: -10px;
 
 
   }
@@ -201,6 +329,12 @@
     width: 26px;
     height: 24px;
 
+    @include lg {
+      width: 20px;
+      height: 20px;
+      font-size: 9px;
+    }
+
     &-active {
       display: flex;
       align-items: center;
@@ -212,6 +346,12 @@
       font-size: 12px;
       width: 26px;
       height: 26px;
+
+      @include lg {
+        width: 20px;
+        height: 20px;
+        font-size: 9px;
+      }
     }
   }
 }

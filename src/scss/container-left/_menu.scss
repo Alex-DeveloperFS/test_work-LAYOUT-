@@ -8,11 +8,15 @@
 
 
   &-container {
-    max-width: 250px;
+    //max-width: 250px;
     display: flex;
     flex-direction: column;
     gap: 18px;
-    margin-top: 9px;
+
+    width: 100%;
+    margin-top: 8px;
+    margin-right: 27px;
+    margin-left: 29px;
   }
 
   &-item {
@@ -21,7 +25,6 @@
     justify-content: space-between;
     align-items: center;
     height: 46px;
-    width: 250px;
     padding-right: 13px;
     padding-left: 11px;
     border-radius: 7px;
@@ -55,7 +58,7 @@
 
     &.active {
       background-color: #5932EA;
-      width: 250px;
+
       padding-left: 11px;
       padding-right: 13px;
       border-radius: 8px;

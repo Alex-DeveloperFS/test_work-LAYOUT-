@@ -3,13 +3,17 @@
 
 .table__list-6 {
   display: grid;
-  grid-template-columns: $grid-columns ;
+  grid-template-columns: $grid-columns-ul ;
   grid-template-rows: 1fr;
   grid-template-areas:
     "name-6 company-6 number-6 email-6 country-6 status-6";
   grid-area: table__list-6;
   @extend %table-items;
   margin-top: 2px;
+
+  //@include ul {
+  //  grid-template-columns: $grid-columns-ul
+  //}
 }
 
 .name-6 {

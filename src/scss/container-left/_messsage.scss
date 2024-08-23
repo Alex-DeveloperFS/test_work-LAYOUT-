@@ -4,7 +4,9 @@
 .message {
   grid-area: massage-container;
   margin-left: 29px;
-  margin-top: -4px;
+  margin-bottom: 76px;
+  display: flex;
+  align-items: flex-end;
 
 
   &-item {

@@ -26,7 +26,7 @@
 
   grid-area: table__filter;
   grid-template-areas: "names companies numbers emails countries statuses";
-  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
+  grid-template-columns: 19.4% 14.7% 17.6% 22.9% 16% 9.4%;
   grid-template-rows: 1fr;
 }
 .table__filter--item {
@@ -72,12 +72,10 @@
 .table__list-1 {
   display: grid;
 
-  margin-top: -10px;
-
   grid-area: table__list-1;
   grid-template-areas: "name-1 company-1 number-1 email-1 country-1 status-1";
-  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
-  grid-template-rows: 90px repeat(9, 70px) 87px;
+  grid-template-columns: 19.4% 14.7% 17.6% 22.9% 16% 9.4%;
+  grid-template-rows: 1fr;
 }
 
 .name-1 {
@@ -111,7 +109,7 @@
 
   grid-area: table__list-2;
   grid-template-areas: "name-2 company-2 number-2 email-2 country-2 status-2";
-  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
+  grid-template-columns: 19.4% 14.7% 17.6% 22.9% 16% 9.4%;
   grid-template-rows: 1fr;
 }
 
@@ -146,7 +144,7 @@
 
   grid-area: table__list-3;
   grid-template-areas: "name-3 company-3 number-3 email-3 country-3 status-3";
-  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
+  grid-template-columns: 19.4% 14.7% 17.6% 22.9% 16% 9.4%;
   grid-template-rows: 1fr;
 }
 
@@ -181,7 +179,7 @@
 
   grid-area: table__list-4;
   grid-template-areas: "name-4 company-4 number-4 email-4 country-4 status-4";
-  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
+  grid-template-columns: 19.4% 14.7% 17.6% 22.9% 16% 9.4%;
   grid-template-rows: 1fr;
 }
 
@@ -216,7 +214,7 @@
 
   grid-area: table__list-5;
   grid-template-areas: "name-5 company-5 number-5 email-5 country-5 status-5";
-  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
+  grid-template-columns: 19.4% 14.7% 17.6% 22.9% 16% 9.4%;
   grid-template-rows: 1fr;
 }
 
@@ -251,7 +249,7 @@
 
   grid-area: table__list-6;
   grid-template-areas: "name-6 company-6 number-6 email-6 country-6 status-6";
-  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
+  grid-template-columns: 19.4% 14.7% 17.6% 22.9% 16% 9.4%;
   grid-template-rows: 1fr;
 }
 
@@ -286,7 +284,7 @@
 
   grid-area: table__list-7;
   grid-template-areas: "name-7 company-7 number-7 email-7 country-7 status-7";
-  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
+  grid-template-columns: 19.4% 14.7% 17.6% 22.9% 16% 9.4%;
   grid-template-rows: 1fr;
 }
 
@@ -321,7 +319,7 @@
 
   grid-area: table__list-8;
   grid-template-areas: "name-8 company-8 number-8 email-8 country-8 status-8";
-  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
+  grid-template-columns: 19.4% 14.7% 17.6% 22.9% 16% 9.4%;
   grid-template-rows: 1fr;
 }
 
@@ -353,6 +351,8 @@
   display: grid;
 
   width: 100%;
+  height: 100vh;
+  padding-right: 50px;
 
   background-color: #f6f8ff;
 
@@ -360,7 +360,7 @@
   grid-area: right-container;
   grid-template-areas: "right-container__text" "table";
   grid-template-columns: 1fr;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: minmax(96px, 8%) 90%;
 }
 .right-container__title {
   margin-top: 47px;
@@ -384,10 +384,9 @@
   background-color: #ffffff;
 
   grid-area: table;
-  grid-auto-flow: row;
   grid-template-areas: "table__header table__header table__header table__header table__header table__header" "table__filter table__filter table__filter table__filter table__filter table__filter" "table__list-1 table__list-1 table__list-1 table__list-1 table__list-1 table__list-1" "table__list-2 table__list-2 table__list-2 table__list-2 table__list-2 table__list-2" "table__list-3 table__list-3 table__list-3 table__list-3 table__list-3 table__list-3" "table__list-4 table__list-4 table__list-4 table__list-4 table__list-4 table__list-4" "table__list-5 table__list-5 table__list-5 table__list-5 table__list-5 table__list-5" "table__list-6 table__list-6 table__list-6 table__list-6 table__list-6 table__list-6" "table__list-7 table__list-7 table__list-7 table__list-7 table__list-7 table__list-7" "table__list-8 table__list-8 table__list-8 table__list-8 table__list-8 table__list-8" "page-entries page-entries page-entries page-number page-number page-number";
-  grid-template-columns: minmax(172px, auto) minmax(131px, auto) minmax(156px, auto) minmax(207px, auto) minmax(140px, auto) minmax(162px, auto);
-  grid-template-rows: 96px repeat(9, 69px) 68px;
+  grid-template-columns: 19.4% 14.7% 17.6% 22.9% 16% 9.4%;
+  grid-template-rows: 11.8% repeat(9, 8.5%) 11.7%;
 }
 
 .table__header {
@@ -408,7 +407,7 @@
   -ms-flex-direction: column;
       flex-direction: column;
 
-  padding-top: 36px;
+  margin-top: 36px;
   padding-left: 38px;
 
   grid-area: table__title;
@@ -548,7 +547,7 @@
   align-items: center;
   -ms-flex-align: center;
 
-  margin-top: 18px;
+  margin-top: -10px;
   margin-left: 38px;
 
   grid-area: page-entries;
@@ -577,7 +576,7 @@
   display: -ms-flexbox;
   display: flex;
 
-  margin-top: 19px;
+  margin-top: -10px;
 
   gap: 9px;
 }
@@ -632,8 +631,8 @@
   gap: 0;
   grid-area: left-container;
   grid-template-areas: "logo" "menu" "massage-container";
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-columns: 100%;
+  grid-template-rows: minmax(100px, 10%) minmax(400px, 50%) minmax(200px, 1fr);
 }
 
 .menu {
@@ -655,8 +654,10 @@
   -ms-flex-direction: column;
       flex-direction: column;
 
-  max-width: 250px;
-  margin-top: 9px;
+  width: 100%;
+  margin-top: 8px;
+  margin-right: 27px;
+  margin-left: 29px;
 
   gap: 18px;
 }
@@ -671,7 +672,6 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
 
-  width: 250px;
   height: 46px;
   padding-right: 13px;
   padding-left: 11px;
@@ -708,7 +708,6 @@
   color: #ffffff;
 }
 .menu-item.active {
-  width: 250px;
   padding-right: 13px;
   padding-left: 11px;
 
@@ -717,7 +716,14 @@
 }
 
 .message {
-  margin-top: -4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  align-items: flex-end;
+  -ms-flex-align: end;
+
+  margin-bottom: 76px;
   margin-left: 29px;
 
   grid-area: massage-container;
@@ -818,8 +824,6 @@ html {
   margin: 0 auto;
 
   gap: 0;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
   grid-template-areas: "left-container right-container";
   grid-template-columns: 21.3% 78.7%;
   grid-template-rows: 1fr;
@@ -827,4 +831,141 @@ html {
 
 body {
   background-color: #f6f8ff;
+}
+
+@media (max-width: 1199.8px) {
+  .right-container {
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+  .table {
+    margin-left: 40px;
+  }
+  .table__search--input {
+    width: 180px;
+    height: 30px;
+    padding-bottom: 3px;
+  }
+  .table__search--image {
+    top: 50%;
+    right: 190px;
+  }
+}
+
+@media (max-width: 1199.8px) and (min-width: 992px) {
+  .table__filter--item {
+    font-size: 12px;
+  }
+  .right-container__title {
+    font-size: 20px;
+  }
+  .table__title {
+    margin-top: 20px;
+  }
+  .table__title--text-1 {
+    font-size: 18px;
+  }
+  .table__title--text-2 {
+    font-size: 12px;
+  }
+  .table__item {
+    font-size: 12px;
+  }
+  .table__search {
+    margin-top: 20px;
+    padding-right: 40px;
+  }
+  .status-active {
+    font-size: 12px;
+  }
+  .status-inactive {
+    font-size: 12px;
+  }
+  .page-entries__text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991.8px) {
+  .table__filter--item {
+    font-size: 10px;
+  }
+  .right-container {
+    padding-bottom: 80px;
+  }
+  .right-container__title {
+    font-size: 16px;
+  }
+  .table {
+    margin-top: 0;
+  }
+  .table__title {
+    margin-top: 20px;
+  }
+  .table__title--text-1 {
+    font-size: 14px;
+  }
+  .table__title--text-2 {
+    font-size: 11px;
+  }
+  .table__item {
+    font-size: 9px;
+  }
+  .table__search {
+    margin-top: 20px;
+    padding-right: 40px;
+  }
+  .status-active {
+    width: 50px;
+    height: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    border: 1px solid #00b087;
+
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .status-inactive {
+    width: 50px;
+    height: 20px;
+
+    border: 1px solid #df0404;
+
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .page-entries__text {
+    font-size: 10px;
+  }
+  .page-number__item {
+    width: 20px;
+    height: 20px;
+
+    font-size: 9px;
+  }
+  .page-number__item-active {
+    width: 20px;
+    height: 20px;
+
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .table__filter--item {
+    font-size: 8px;
+  }
+  .table__list-1 {
+    grid-template-columns: 19.4% 12.7% 17.6% 25.9% 16% 9.4%;
+  }
+  .table__item {
+    font-size: 8px;
+  }
+  .status-active {
+    font-size: 8px;
+  }
+  .status-inactive {
+    font-size: 8px;
+  }
 }

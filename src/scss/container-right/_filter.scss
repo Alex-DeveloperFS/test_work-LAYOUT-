@@ -3,7 +3,7 @@
 
 .table__filter {
   display: grid;
-  grid-template-columns: $grid-columns;
+  grid-template-columns: $grid-columns-ul;
   grid-template-rows: 1fr;
   grid-template-areas:
     "names companies numbers emails countries statuses";
@@ -20,6 +20,18 @@
     font-size: 14px;
     color: $color-text-filter;
     font-weight: 500;
+
+    @include xl-lg {
+      font-size: 12px;
+    }
+
+    @include lg {
+      font-size: 10px;
+    }
+    @include md {
+      font-size: 8px;
+    }
+
   }
 }
 

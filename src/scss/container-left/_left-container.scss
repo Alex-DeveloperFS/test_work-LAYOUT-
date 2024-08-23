@@ -3,15 +3,16 @@
 
 .left-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows:  1fr 6fr 1fr;
+  grid-template-columns: 100%;
+  //grid-template-rows:  1fr 6fr 1fr;
+  grid-template-rows:   minmax(100px, 10%)minmax(400px, 50%) minmax(200px, 1fr);
+
   gap: 0;
   grid-template-areas:
     "logo"
     "menu"
     "massage-container";
   grid-area: left-container;
-
   background-color: $color-white;
 }
 
