@@ -10,28 +10,28 @@
   grid-area: table__list-2;
   @extend %table-items;
   margin-top: 2px;
-
-  //@include ul {
-  //  grid-template-columns: $grid-columns-ul
-  //}
 }
 
 .name-2 {
   grid-area: name-2;
-
 }
+
 .company-2 {
   grid-area: company-2;
 }
+
 .number-2 {
   grid-area: number-2;
 }
+
 .email-2 {
   grid-area: email-2;
 }
+
 .country-2 {
   grid-area: country-2;
 }
+
 .status-2 {
   grid-area: status-2;
 }

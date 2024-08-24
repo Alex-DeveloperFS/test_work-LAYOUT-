@@ -16,13 +16,14 @@
 <body>
 
 <div class="container">
+
   <div class="left-container">
 
     <div class="logo">
       <div class="logo__items">
         <img class="logo__image" src="image/logo.svg" alt="logo">
         <h1 class="logo__text">Dashboard</h1>
-        <span class="logo__span">v.01</span>
+        <p class="logo__span">v.01</p>
       </div>
     </div>
 
@@ -45,12 +46,12 @@
           <p class="menu-item__arrow">></p>
         </div>
 
-        <div class="menu-item active">
-          <div class="menu-item__content">
-            <img class="menu-item__image" src="image/user-square%201.svg" alt="image">
-            <a class="menu-item__link active" href="#">Customers</a>
+        <div class="menu-item-enter">
+          <div class="menu-item__content-enter">
+            <img class="menu-item__image-enter" src="image/user-square.svg" alt="image">
+            <a class="menu-item__link-enter" href="#">Customers</a>
           </div>
-          <p class="menu-item__arrow active">></p>
+          <p class="menu-item__arrow-enter">></p>
         </div>
 
         <div class="menu-item">
@@ -82,24 +83,28 @@
     <div class="message">
       <div class="message-item">
         <img class="message-item__image" src="image/Ellipse%208.png" alt="image">
-
         <div class="message-item__content">
           <p class="message-item__text">Evano</p>
           <p class="message-item__text--bottom">Project Manager</p>
         </div>
-
       </div>
     </div>
-
   </div>
 
+
+
   <div class="right-container">
+
+    <div class="left-container__hamburger">
+      <span class="left-container__btn-row"></span>
+      <span class="left-container__btn-row"></span>
+      <span class="left-container__btn-row"></span>
+    </div>
 
     <h2 class="right-container__title">Hello Evano 👋🏼,</h2>
 
     <div class="table">
       <div class="table__header">
-
         <div class="table__title">
           <h2 class="table__title--text-1">All Customers</h2>
           <h3 class="table__title--text-2">Active Members</h3>
@@ -230,11 +235,8 @@
   </div>
 </div>
 
-
 <script src="libs/jquery/dist/jquery.min.js"></script>
-
-
-<script src="assets/js/main.js"></script>
+<script src="assets/main.js"></script>
 
 </body>
 </html>

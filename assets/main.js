@@ -1,6 +1,24 @@
 $(document).ready(function () {
-  $('.header-navbar__hamburger').on('click', function () {
+  $('.left-container__hamburger').on('click', function () {
     $(this).toggleClass('active')
-    $('.header-navbar__list').stop(true, true).slideToggle(500)
+    $('.menu').toggleClass('active')
+    $('.menu-container').toggleClass('active')
+    $('.menu-item').toggleClass('active')
+    $('.menu-item__arrow').toggleClass('active')
+    $('.menu-item__arrow-enter').toggleClass('active')
+    $('.menu-item-enter').toggleClass('active')
+    $('.menu-item__link').toggleClass('active')
+    $('.left-container').toggleClass('active')
+    $('.logo').toggleClass('active')
+    $('.logo__text').toggleClass('active')
+    $('.logo__span').toggleClass('active')
+    $('.message').toggleClass('active')
+    $('.message-item').toggleClass('active')
+    $('.message-item__content').toggleClass('active')
+    $('.message-item__image').toggleClass('active')
+    $('.message-item__text').toggleClass('active')
+    $('.message-item__text--bottom').toggleClass('active')
+    $('.enter').toggleClass('active')
   })
 })
+

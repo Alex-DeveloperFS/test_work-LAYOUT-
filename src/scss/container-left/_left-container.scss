@@ -1,12 +1,11 @@
 @use "../presets" as *;
-@use "../mixins" as *;;
+@use "../mixins" as *;
 
 .left-container {
   display: grid;
   grid-template-columns: 100%;
-  //grid-template-rows:  1fr 6fr 1fr;
-  grid-template-rows:   minmax(100px, 10%)minmax(400px, 50%) minmax(200px, 1fr);
-
+  //grid-template-rows: minmax(90px, 10%) 80% 10%;
+  grid-template-rows: minmax(110px,10%) minmax(380px,75%) 15%;
   gap: 0;
   grid-template-areas:
     "logo"
@@ -14,7 +13,37 @@
     "massage-container";
   grid-area: left-container;
   background-color: $color-white;
+
+ @include xl {
+   grid-template-rows: minmax(110px,10%) minmax(330px,75%) 15%;
+ }
+
+  @include md {
+    display: none;
+  }
+
+  @include md-min {
+    display: grid;
+  }
+
+  &.active {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 65% 15%;
+    gap: 0;
+    grid-template-areas:
+    "logo"
+    "menu"
+    "massage-container";
+    grid-area: none;
+    background-color: #d0d5d2;
+
+    @include md-min {
+      display: none;
+    }
+  }
 }
-
-
 

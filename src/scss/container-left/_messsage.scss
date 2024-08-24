@@ -8,17 +8,32 @@
   display: flex;
   align-items: flex-end;
 
+  &.active {
+    margin-bottom: 30px;
+  }
 
   &-item {
     display: flex;
     align-items: center;
     gap: 12px;
 
+    &.active {
+      gap: 10px;
+    }
+
+    @include lg {
+      margin-left: -15px;
+    }
+
     &__image {
       width: 42px;
       height: 42px;
-    }
 
+      &.active {
+        width: 35px;
+        height: 35px;
+      }
+    }
 
     &__content {
       display: flex;
@@ -27,16 +42,33 @@
       margin-top: 1px;
     }
 
-
     &__text {
       font-size: 14px;
       font-weight: 500;
       color: $color-black;
 
+      &.active {
+        font-size: 10px;
+      }
+
+      @include lg {
+        font-size: 12px;
+        font-weight: 400;
+      }
+
       &--bottom {
         font-size: 12px;
         font-weight: 500;
         color: #757575;
+
+        &.active {
+          font-size: 8px;
+        }
+
+        @include lg {
+          font-size: 10px;
+          font-weight: 400;
+        }
       }
     }
   }

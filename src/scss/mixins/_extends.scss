@@ -1,7 +1,13 @@
 @use "../presets" as *;
+@use "mixins-media";
 
 %table-items {
   border-bottom: 1px solid #EEEEEE;
   margin-left: 38px;
   margin-right: 40px;
+
+  @include md {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
 }

@@ -4,15 +4,32 @@
 .logo {
   grid-area: logo;
 
+  &.active {
+    display: grid;
+  }
+
   &__items {
     display: flex;
     align-items: center;
     margin-top: 25px;
     margin-left: 28px;
+
+    @include lg {
+      margin-left: 14px;
+    }
   }
 
   &__image {
+    @include xl {
+      width: 30px;
+      height: 30px;
+    }
 
+    @include lg {
+      width: 25px;
+      height: 25px;
+
+    }
   }
 
   &__text {
@@ -21,6 +38,20 @@
     margin-top: 18px;
     font-size: 26px;
     letter-spacing: 0.08px;
+
+    &.active {
+      font-size: 16px;
+    }
+
+    @include xl {
+      font-size: 20px;
+      margin-left: 1.5px;
+    }
+
+    @include xl {
+      font-size: 18px;
+      margin-left: 1px;
+    }
   }
 
   &__span {
@@ -28,6 +59,20 @@
     margin-top: 10px;
     margin-left: 4px;
     color: #838383;
+
+    &.active {
+      font-size: 7px;
+    }
+
+    @include xl {
+      font-size: 9px;
+      margin-left: 3px;
+    }
+
+    @include lg {
+      font-size: 8px;
+      margin-left: 2px;
+    }
   }
 }
 

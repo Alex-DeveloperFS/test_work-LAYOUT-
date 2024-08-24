@@ -8,31 +8,30 @@
   grid-template-areas:
     "name-8 company-8 number-8 email-8 country-8 status-8";
   grid-area: table__list-8;
-
   @extend %table-items;
   margin-top: 2px;
-
-  //@include ul {
-  //  grid-template-columns: $grid-columns-ul
-  //}
 }
 
 .name-8 {
   grid-area: name-8;
-
 }
+
 .company-8 {
   grid-area: company-8;
 }
+
 .number-8 {
   grid-area: number-8;
 }
+
 .email-8 {
   grid-area: email-8;
 }
+
 .country-8 {
   grid-area: country-8;
 }
+
 .status-8 {
   grid-area: status-8;
 }

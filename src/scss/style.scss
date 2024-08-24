@@ -17,6 +17,10 @@ html {
   line-height: 1;
 }
 
+body {
+  background-color: $color-bg-container;
+}
+
 .container {
   display: grid;
   //grid-template-columns:  21.3% 78.7%;
@@ -25,11 +29,25 @@ html {
   gap: 0;
   grid-template-areas:
     "left-container right-container";
-  max-width:  $container-primary;
+  max-width: $container-primary;
   margin: 0 auto;
   height: 100vh;
+
+
+  @include md {
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+    grid-template-areas:
+    "right-container";
+    max-width: $container-primary;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+  @include md-min {
+    display: grid;
+  }
 }
 
-body {
-  background-color: $color-bg-container;
-}

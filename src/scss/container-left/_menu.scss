@@ -6,17 +6,34 @@
   display: flex;
   justify-content: center;
 
-
   &-container {
-    //max-width: 250px;
     display: flex;
     flex-direction: column;
     gap: 18px;
-
     width: 100%;
     margin-top: 8px;
     margin-right: 27px;
     margin-left: 29px;
+
+    &.active {
+      width: 100px;
+      margin-top: 8px;
+      margin-left: 10px;
+      margin-right: 40px;
+    }
+
+    @include xl {
+      margin-top: 0;
+      margin-left: 20px;
+      margin-right: 20px;
+      gap: 5px;
+    }
+    @include lg {
+      margin-top: 0;
+      margin-left: 14px;
+      margin-right: 14px;
+      gap: 5px;
+    }
   }
 
   &-item {
@@ -29,11 +46,39 @@
     padding-left: 11px;
     border-radius: 7px;
 
+    &-enter {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      height: 46px;
+      padding-right: 13px;
+      padding-left: 11px;
+      border-radius: 7px;
+
+      &.active {
+        height: 30px;
+        border-radius: 5px;
+        width: 130px;
+      }
+    }
+
+    &.active {
+      height: 30px;
+      border-radius: 5px;
+      width: 130px;
+    }
 
     &__content {
       display: flex;
       align-items: center;
       gap: 14px;
+
+      &-enter {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
     }
 
     &__arrow {
@@ -43,28 +88,70 @@
       font-weight: 500;
 
       &.active {
+        display: none;
+      }
+
+      &-enter {
         color: $color-white;
+
+        &.active {
+          display: none;
+        }
+
+        @include xl {
+          font-size: 14px;
+        }
+
+        @include xl {
+          font-size: 14px;
+        }
       }
     }
-
 
     &__link {
       text-decoration: none;
+      color: inherit;
 
-      &.active {
+      @include xl {
+        font-size: 12px;
+      }
+
+      &-enter {
         color: $color-white;
+        text-decoration: none;
+
+        @include xl {
+          font-size: 12px;
+        }
       }
     }
 
-    &.active {
+    &-enter {
       background-color: #5932EA;
-
       padding-left: 11px;
       padding-right: 13px;
       border-radius: 8px;
+
+      .active {
+        width: 125px;
+      }
+    }
+
+    &__image {
+
+      @include xl {
+        width: 20px;
+        height: 20px;
+      }
+
+      &-enter {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }
+
 
 
 
