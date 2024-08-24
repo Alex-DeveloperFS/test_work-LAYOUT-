@@ -22,6 +22,10 @@
     padding-bottom: 40px;
   }
 
+  @include md {
+    padding-right: 0;
+  }
+
   &__title {
     grid-area: right-container__text;
     font-size: 24px;
@@ -69,7 +73,7 @@
   max-width: 968px;
   max-height: 812px;
   min-height: 440px;
-  min-width: 380px;
+  min-width: 350px;
   background-color: $color-white;
   margin-top: 33px;
   margin-left: 71px;
@@ -84,8 +88,8 @@
   }
 
   @include md {
-    max-height: 100%;
-    max-width: 100%;
+    //max-height: 100%;
+    //max-width: 100%;
     margin-left: 20px;
     margin-right: 20px;
   }
